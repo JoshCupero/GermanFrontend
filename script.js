@@ -22,7 +22,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
-const nameText = "Josh Cupero";
+const nameText = "Ludwig Cupero";
 let index = 0;
 function typeEffect() {
     if (index < nameText.length) {
