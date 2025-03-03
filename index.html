@@ -12,7 +12,14 @@
         <h2>Modern, Schnell, Zuverlässig</h2>
     </header>
 
+    <section id="hero">
+        <h1>Professionelle Webentwicklung</h1>
+        <p>Modern, schnell und zuverlässig – Erstellen Sie Ihre perfekte Website mit einem erfahrenen Entwickler!</p>
+        <a href="#contact" class="cta-button">Jetzt Kontakt aufnehmen</a>
+    </section>
+
     <section id="about">
+        <h2>Über mich</h2>
         <p>Ich bin ein erfahrener Webentwickler mit Kenntnissen in HTML, CSS, JavaScript und mehr. Ich erstelle moderne, schnelle und sichere Webseiten für Ihr Unternehmen!</p>
     </section>
 
@@ -26,9 +33,42 @@
         </ul>
     </section>
 
-    <section id="pricing">
-        <h2>Preis</h2>
-        <p>💰 <strong>€200 / Stunde</strong></p>
+    <section id="portfolio">
+        <h2>Meine Arbeiten</h2>
+        <div class="portfolio-container">
+            <div class="portfolio-item">
+                <img src="project1.jpg" alt="Projekt 1">
+                <p>Projekt 1: Online-Shop für ein lokales Unternehmen</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="project2.jpg" alt="Projekt 2">
+                <p>Projekt 2: Portfolio-Website für einen Designer</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>Kundenmeinungen</h2>
+        <div class="testimonial">
+            <p>"Die Zusammenarbeit war großartig! Meine neue Website sieht professionell aus und funktioniert perfekt!"</p>
+            <strong>- Anna Schmidt, Geschäftsführerin</strong>
+        </div>
+        <div class="testimonial">
+            <p>"Sehr zuverlässig und schnell. Die SEO-Optimierung hat meinen Online-Shop enorm verbessert!"</p>
+            <strong>- Markus Weber, Unternehmer</strong>
+        </div>
+    </section>
+
+    <section id="faq">
+        <h2>Häufig gestellte Fragen</h2>
+        <details>
+            <summary>Wie lange dauert die Entwicklung einer Website?</summary>
+            <p>Je nach Komplexität dauert es zwischen einer Woche und einem Monat.</p>
+        </details>
+        <details>
+            <summary>Kann ich nach der Fertigstellung Änderungen vornehmen?</summary>
+            <p>Ja, ich biete auch Wartung und Anpassungen nach dem Launch an.</p>
+        </details>
     </section>
 
     <section id="like-section">
@@ -39,9 +79,18 @@
 
     <section id="contact">
         <h2>Kontakt</h2>
-        <p>📧 E-Mail: <a href="mailto:LudwigCuperoisttoll@gmail.com">LudwigCuperoisttoll@gmail.com</a></p>
-        <p>📞 Telefon: <a href="tel:+49303056709">(+49) 30 305 6709</a></p>
-        <p>🔗 Mehr Infos: <a href="#" id="qr-link">Scan den QR-Code</a></p>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Senden</button>
+        </form>
     </section>
 
     <footer>

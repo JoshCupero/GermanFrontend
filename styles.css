@@ -17,6 +17,29 @@ h1, h2 {
     margin: 10px 0;
 }
 
+#hero {
+    background: url('hero-background.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 24px;
+    background-color: #ffcc00;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff9900;
+}
+
 section {
     padding: 20px;
     background: white;
@@ -25,15 +48,6 @@ section {
     max-width: 600px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    padding: 5px;
 }
 
 button {
