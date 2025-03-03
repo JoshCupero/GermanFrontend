@@ -11,3 +11,7 @@ likeButton.addEventListener("click", () => {
     localStorage.setItem("likes", likes);
     likeCountElement.innerText = likes;
 });
+
+document.getElementById("qr-link").addEventListener("click", function() {
+    alert("QR-Code wird bald hinzugefügt!");
+});
