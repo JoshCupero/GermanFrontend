@@ -3,28 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webentwicklung - Modern & Zuverlässig</title>
+    <title>Webentwicklung - Built for Speed, Engineered for Excellence</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Webentwicklung</h1>
-        <h2>Modern, Schnell, Zuverlässig</h2>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="pfp.png" alt="Logo" class="logo">
+                <div class="header-text">
+                    <h1 id="typingEffect"></h1>
+                    <p>Softwareentwickler | Web-Spezialist | Technik-Enthusiast</p>
+                </div>
+            </div>
+        <nav>
+            <a href="#about">Über mich</a>
+            <a href="#services">Dienstleistungen</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
     </header>
 
-    <main>
-        <section id="hero">
-            <h1>Professionelle Webentwicklung</h1>
+    <section id="hero">
+        <img src="hero.png" alt="Hero Image" class="hero-image">
+        <div class="hero-overlay">
+            <h1>Built for Speed. Engineered for Excellence.</h1>
             <p>Moderne, schnelle und sichere Webseiten für Ihr Unternehmen.</p>
             <a href="#contact" class="cta-button">Jetzt Kontakt aufnehmen</a>
-        </section>
+        </div>
+    </section>
 
-        <section id="about">
+    <main>
+        <section id="about" class="content-box">
             <h2>Über mich</h2>
-            <p>Ich bin ein erfahrener Webentwickler mit Kenntnissen in HTML, CSS, JavaScript und mehr.</p>
+            <p>Ich bin ein erfahrener Webentwickler mit Kenntnissen in HTML, CSS, JavaScript, React, Node.js, Python und mehr.</p>
         </section>
 
-        <section id="services">
+        <section id="services" class="content-box">
             <h2>Dienstleistungen</h2>
             <ul>
                 <li>✔ Erstellung von responsiven Webseiten</li>
@@ -34,33 +48,89 @@
             </ul>
         </section>
 
-        <section id="like-section">
+        <section id="why-choose-us" class="content-box">
+            <h2>Warum uns wählen?</h2>
+            <ul>
+                <li>✅ Maßgeschneiderte Web-Lösungen für jedes Unternehmen</li>
+                <li>✅ Schnelle Ladezeiten und mobile Optimierung</li>
+                <li>✅ SEO-Optimierung für maximale Sichtbarkeit</li>
+                <li>✅ Höchste Sicherheitsstandards und Datenschutz</li>
+                <li>✅ Support und Wartung auch nach der Fertigstellung</li>
+            </ul>
+        </section>
+
+        <section id="technologies" class="content-box">
+            <h2>Technologien, die wir verwenden</h2>
+            <div class="tech-grid">
+                <img src="html.png" alt="HTML">
+                <img src="css.png" alt="CSS">
+                <img src="js.png" alt="JavaScript">
+                <img src="react.png" alt="React">
+                <img src="node.png" alt="Node.js">
+                <img src="python.png" alt="Python">
+                <img src="mongodb.png" alt="MongoDB">
+                <img src="git.png" alt="Git">
+            </div>
+        </section>
+
+        <section id="faq" class="content-box">
+            <h2>Häufig gestellte Fragen</h2>
+            <details>
+                <summary>Wie lange dauert die Entwicklung einer Website?</summary>
+                <p>Die Dauer hängt von der Komplexität ab. Eine einfache Website kann in 1–2 Wochen erstellt werden, während größere Projekte 4–6 Wochen dauern können.</p>
+            </details>
+            <details>
+                <summary>Bieten Sie SEO-Optimierung an?</summary>
+                <p>Ja, wir optimieren jede Website für Google und sorgen für eine hohe Sichtbarkeit.</p>
+            </details>
+            <details>
+                <summary>Kann ich nachträglich Änderungen vornehmen?</summary>
+                <p>Ja! Wir bieten Wartungs- und Update-Dienste für bestehende Websites.</p>
+            </details>
+        </section>
+
+        <section id="testimonials" class="content-box">
+            <h2>Kundenmeinungen</h2>
+            <div class="testimonial">
+                <p>„Die Zusammenarbeit war großartig! Meine neue Website sieht professionell aus und funktioniert perfekt.“</p>
+                <strong>- Anna Schmidt, Geschäftsführerin</strong>
+            </div>
+            <div class="testimonial">
+                <p>„Sehr zuverlässig und schnell. Die SEO-Optimierung hat meinen Online-Shop enorm verbessert!“</p>
+                <strong>- Markus Weber, Unternehmer</strong>
+            </div>
+        </section>
+
+        <section id="like-section" class="content-box">
             <h2>Gefällt Ihnen diese Seite?</h2>
             <p>Likes: <span id="likeCount">0</span></p>
             <button id="likeButton">👍 Like</button>
         </section>
+        
+        <script src="script.js"></script>
+        
 
-        <section id="contact">
+        <section id="contact" class="content-box">
             <h2>Kontakt</h2>
+            <div class="social-links">
+                <a href="mailto:LudwigCuperoisttoll@gmail.com"><img src="gmail.png" alt="Gmail" class="social-icon"></a>
+                <a href="https://github.com/JoshCupero" target="_blank"><img src="github.png" alt="GitHub" class="social-icon"></a>
+            </div>
             <form action="https://formspree.io/f/your-form-id" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-
                 <label for="email">E-Mail:</label>
                 <input type="email" id="email" name="email" required>
-
                 <label for="message">Nachricht:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
+                <textarea id="message" name="message" rows="3" required></textarea>
                 <button type="submit">Senden</button>
             </form>
         </section>
+
     </main>
 
     <footer>
-        <p>© 2024 Ludwig Cupero Webentwicklung - Alle Rechte vorbehalten.</p>
+        <p>© 2024 Webentwicklung - Built for Speed, Engineered for Excellence</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
